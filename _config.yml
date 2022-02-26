@@ -1,0 +1,59 @@
+# Configuración Ruby
+date_format: "%d/%m/%Y"
+
+# Configuración Jekyll
+url: "https://nontre.es"
+
+# Conversion
+markdown: kramdown
+# ==========
+
+# Markdown Processors
+kramdown:
+  input: GFM
+# ==========
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      social-share: true # add social media sharing buttons to all blog posts
+  - scope:
+      path: "" # any file that's not a post will be a "page" layout by default
+    values:
+      layout: "page"
+
+# Outputting
+permalink: /:title/
+# ==========
+
+# Plugins
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jemoji
+# =======
+
+# Configuración Front
+title: Nontre
+author: Nontre
+language: es
+
+url-pretty: "nontre.es"
+
+navbar-links:
+  Sobre mí: "aboutme"
+
+avatar: "/assets/img/avatar-icon.jfif"
+
+favicon: "/assets/img/favicon.ico"
+
+share-links-active:
+  twitter: true
+  facebook: false
+  linkedin: false
+  vk: false
+
+feed_show_tags: true
